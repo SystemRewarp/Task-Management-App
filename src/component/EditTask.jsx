@@ -12,7 +12,7 @@ export default function EditTask() {
   useEffect(() => {
     const fetchTask = async () => {
       try {
-        const res = await fetch(`http://PythnSadev.pythonanywhere.com/tasks/${id}`);
+        const res = await fetch(`https://PythnSadev.pythonanywhere.com/tasks/${id}`);
         if (!res.ok) throw new Error("Failed to load task");
 
         const data = await res.json();

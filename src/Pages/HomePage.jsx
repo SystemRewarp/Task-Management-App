@@ -7,7 +7,7 @@ export default function HomePage() {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch("http://PythnSadev.pythonanywhere.com/tasks");
+      const response = await fetch("https://PythnSadev.pythonanywhere.com/tasks");
       const data = await response.json();
       setTasks(data);
     } catch (error) {

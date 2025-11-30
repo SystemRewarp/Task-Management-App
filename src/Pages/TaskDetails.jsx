@@ -9,7 +9,7 @@ export default function TaskDetails() {
   useEffect(() => {
     const loadTask = async () => {
       try {
-        const res = await fetch(`http://PythnSadev.pythonanywhere.com/tasks/${id}`);
+        const res = await fetch(`https://PythnSadev.pythonanywhere.com/tasks/${id}`);
         const data = await res.json();
         setTask(data);
       } catch (err) {

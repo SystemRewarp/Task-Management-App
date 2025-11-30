@@ -11,7 +11,7 @@ export default function CreateTaskPage() {
     if (title.trim() === "") return;
 
     try {
-      const response = await fetch("http://PythnSadev.pythonanywhere.com/tasks", {
+      const response = await fetch("https://PythnSadev.pythonanywhere.com/tasks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title }),

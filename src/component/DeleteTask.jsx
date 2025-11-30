@@ -10,7 +10,7 @@ export default function DeleteTask() {
 
   useEffect(() => {
     // Fetch task details
-    fetch(`http://PythnSadev.pythonanywhere.com/tasks/${id}`)
+    fetch(`https://PythnSadev.pythonanywhere.com/tasks/${id}`)
       .then((res) => res.json())
       .then((data) => setTask(data))
       .catch(() => setMessage("Error fetching task details"));
